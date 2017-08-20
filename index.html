@@ -29,10 +29,10 @@
 <body>
     
     <header class="header">
-        <div class="top-bar container-fluid">
+        <div class="top-bar container-fluid no-print">
             <div class="actions">
                 <a class="btn hidden-xs" href="mailto:alan.lira1992@gmail.com"><i class="fa fa-paper-plane" aria-hidden="true"></i> CONTACTE-ME</a>
-                <!--<a class="btn" href="#"><i class="fa fa-download" aria-hidden="true"></i> Download My Resume</a>-->
+                <a class="btn" href="#"><i class="fa fa-download" aria-hidden="true"></i>Download</a>
             </div><!--//actions-->
             <ul class="social list-inline">
                 <li><a href="https://www.linkedin.com/in/alan-lira-56ba47ab" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
@@ -56,14 +56,14 @@
         <div class="contact-info">
             <div class="container text-center">
                 <ul class="list-inline">
-                    <li class="email"><i class="fa fa-envelope"></i><a href="mailto:alan.lira1992@gmail.com">alan.lira1992@gmail.com</a></li>
-                    <li><i class="fa fa-phone"></i> <a href="tel: 45998168116">(45) 99816-8116</a></li>
+                    <li class="email"><i class="fa fa-envelope"></i><a class="print-only-content" href="mailto:alan.lira1992@gmail.com">alan.lira1992@gmail.com</a></li>
+                    <li><i class="fa fa-phone"></i> <a class="print-only-content" href="tel: 45998168116">(45) 99816-8116</a></li>
                     <!--<li class="website"><i class="fa fa-globe"></i><a href="#" target="_blank">portfoliosite.com</a></li>-->
                 </ul>
             </div><!--//container-->
         </div><!--//contact-info-->
         
-        <div class="page-nav-space-holder hidden-xs">
+        <div class="page-nav-space-holder hidden-xs no-print">
             <div id="page-nav-wrapper" class="page-nav-wrapper text-center">
                 <div class="container">
                     <ul id="page-nav" class="nav page-nav list-inline">
@@ -133,7 +133,7 @@
         <section id="education-section" class="education-section section">
             <h2 class="section-title">Formação</h2>
             <div class="row">                
-                <div class="item col-xs-12 col-sm-4">
+                <div class="item col-xs-12 col-sm-4 col-print-4">
                     <div class="item-inner">
                         <h3 class="degree">Arquitetura de Software Distribuido</h3>
                         <div class="education-body">
@@ -145,7 +145,7 @@
                         </div>-->
                     </div><!--//item-inner-->
                 </div><!--//item-->
-                <div class="item col-xs-12 col-sm-4">
+                <div class="item col-xs-12 col-sm-4 col-print-4">
                     <div class="item-inner">
                         <h3 class="degree">Bacharel em Sistemas de Informação</h3>
                         <div class="education-body">
@@ -161,12 +161,12 @@
         </section><!--//section-->
         
         
-        <section id="skills-section" class="skills-section section text-center">
+        <section id="skills-section" class="skills-section section text-center page-break">
             <h2 class="section-title">Habilidades Profissionais</h2>
             <div class="top-skills">
                 <h3 class="subtitle">Top Skills</h3>
                 <div class="row">
-                    <div class="item col-xs-12 col-sm-4">
+                    <div class="item col-xs-12 col-sm-4 col-print-4">
                         <div class="item-inner">
                             <!--<div class="chart-easy-pie text-center">
                                 <div class="chart-theme-1 chart" data-percent="98"><span>98</span>%</div>
@@ -179,7 +179,7 @@
                             </div>
                         </div><!--//item-inner-->
                     </div><!--//item-->
-                    <div class="item col-xs-12 col-sm-4">
+                    <div class="item col-xs-12 col-sm-4 col-print-4">
                         <div class="item-inner">
                             <!--<div class="chart-easy-pie text-center">
                                 <div class="chart-theme-1 chart" data-percent="90"><span>90</span>%</div>
@@ -191,7 +191,7 @@
                             </div>
                         </div><!--//item-inner-->
                     </div><!--//item-->
-                    <div class="item col-xs-12 col-sm-4">
+                    <div class="item col-xs-12 col-sm-4 col-print-4">
                         <div class="item-inner">
                             <!--<div class="chart-easy-pie text-center">
                                 <div class="chart-theme-1 chart" data-percent="85"><span>85</span>%</div>
@@ -239,7 +239,7 @@
         <section id="blog-section" class="portfolio-section section">
             <h2 class="section-title">Artigos e Palestras</h2>
             <div class="items-wrapper row">
-                <div class="item col-md-3 col-xs-6 ">
+                <div class="item col-md-3 col-xs-6 col-print-4">
                     <div class="item-inner">
                         <figure class="figure">
                             <img class="img-responsive" src="images/posts/cakephp.png" alt="" />
@@ -247,7 +247,7 @@
                         <div class="content text-left">
                             <h3 class="sub-title"><a href="#">Artigo</a></h3>
                             <div class="meta">Como utilizar uma api de Email no CakePHP 3</div>
-                            <div class="action">
+                            <div class="action no-print">
                                 <a href="#">
                                     Ver mais
                                 </a>
@@ -256,7 +256,7 @@
                         <a class="link-mask" target="_blank" href="https://medium.com/@lira92/como-utilizar-uma-api-de-email-no-cake-php-3-7c60fd115f94"></a>              
                     </div><!--//item-inner-->
                 </div><!--//item-->
-                <div class="item col-md-3 col-xs-6 ">
+                <div class="item col-md-3 col-xs-6 col-print-4">
                     <div class="item-inner">
                         <figure class="figure">
                             <img class="img-responsive" src="images/posts/phinx.png" alt="" />
@@ -264,7 +264,7 @@
                         <div class="content text-left">
                             <h3 class="sub-title"><a href="#">Artigo</a></h3>
                             <div class="meta">Usando Migrations com Phinx em PHP</div>
-                            <div class="action">
+                            <div class="action no-print">
                                 <a href="#">
                                     Ver mais
                                 </a>
@@ -273,15 +273,15 @@
                         <a class="link-mask" target="_blank" href="https://medium.com/@lira92/trabalhando-com-migrations-com-phinx-df0461e6182e"></a>              
                     </div><!--//item-inner-->
                 </div><!--//item-->
-                <div class="item col-md-3 col-xs-6 ">
+                <div class="item col-md-3 col-xs-6 col-print-4">
                     <div class="item-inner">
                         <figure class="figure">
                             <img class="img-responsive" src="images/posts/cakephp.png" alt="" />
                         </figure>
                         <div class="content text-left">
                             <h3 class="sub-title"><a href="#">Artigo</a></h3>
-                            <div class="meta">View Cells no Cakephp <br/><br/></div>
-                            <div class="action">
+                            <div class="meta">View Cells no Cakephp <br class="no-print"/><br/></div>
+                            <div class="action no-print">
                                 <a href="#">
                                     Ver mais
                                 </a>
@@ -290,7 +290,7 @@
                         <a class="link-mask" target="_blank" href="https://medium.com/@lira92/view-cells-no-cakephp-d301a5a92a45"></a>              
                     </div><!--//item-inner-->
                 </div><!--//item-->
-                <div class="item col-md-3 col-xs-6 ">
+                <div class="item col-md-3 col-xs-6 col-print-4">
                     <div class="item-inner">
                         <figure class="figure">
                             <img class="img-responsive" src="images/posts/cakephp.png" alt="" />
@@ -302,7 +302,7 @@
                                 </a>
                             </h3>
                             <div class="meta">Ei, Dev Cakephp. Por que você não contribui?</div>
-                            <div class="action">
+                            <div class="action no-print">
                                 <a href="#">
                                     Ver mais
                                 </a>
@@ -312,7 +312,7 @@
                     </div><!--//item-inner-->
                 </div><!--//item-->
 
-                <div class="item col-md-3 col-xs-6 ">
+                <div class="item col-md-3 col-xs-6 col-print-4">
                     <div class="item-inner">
                         <figure class="figure">
                             <img class="img-responsive" src="images/posts/asp-net-heroku.png" alt="" />
@@ -324,7 +324,7 @@
                                 </a>
                             </h3>
                             <div class="meta">Publicando uma aplicação Aspnet Core no Heroku</div>
-                            <div class="action">
+                            <div class="action no-print">
                                 <a href="#">
                                     Ver mais
                                 </a>
@@ -334,7 +334,7 @@
                     </div><!--//item-inner-->
                 </div><!--//item-->
 
-                <div class="item col-md-3 col-xs-6 ">
+                <div class="item col-md-3 col-xs-6 col-print-4">
                     <div class="item-inner">
                         <figure class="figure">
                             <img class="img-responsive" src="images/posts/gitlab-palestra.jpg" alt="" />
@@ -346,7 +346,7 @@
                                 </a>
                             </h3>
                             <div class="meta">Porque você deveria usar Gitlab na sua empresa</div>
-                            <div class="action">
+                            <div class="action no-print">
                                 <a href="#">
                                     Ver mais
                                 </a>
@@ -359,16 +359,16 @@
             </div><!--//item-wrapper-->
             
         </section><!--//section-->
-
+        <br class="page-break"/>
         <section id="portfolio-section" class="portfolio-section section">
             <h2 class="section-title">Portfolio</h2>
-            <ul id="filters" class="filters clearfix">
+            <ul id="filters" class="filters clearfix no-print">
                 <li class="type active" data-filter="*">All</li>
                 <li class="type" data-filter=".backend">Back-end</li>
                 <li class="type" data-filter=".frontend">Front-end</li>
             </ul><!--//filters-->
             <div class="items-wrapper isotope row">
-                <div class="item frontend col-md-3 col-xs-6 ">
+                <div class="item frontend col-md-3 col-xs-6 col-print-3">
                     <div class="item-inner">
                         <figure class="figure">
                             <img class="img-responsive" src="images/portfolio/angular.png" alt="" />
@@ -376,12 +376,12 @@
                         <div class="content text-left">
                             <h3 class="sub-title"><a href="#">Modern Web Apps - Web</a></h3>
                             <div class="meta">Angular</div>
-                            <div class="action"><a href="#">Ver no github</a></div>
+                            <div class="action no-print"><a href="#">Ver no github</a></div>
                         </div><!--//content-->    
                         <a class="link-mask" target="_blank" href="https://github.com/lira92/ModernStore.App"></a>              
                     </div><!--//item-inner-->
                 </div><!--//item-->
-                <div class="item backend col-md-3 col-xs-6 ">
+                <div class="item backend col-md-3 col-xs-6 col-print-3">
                     <div class="item-inner">
                         <figure class="figure">
                             <img class="img-responsive" src="images/portfolio/csharp.png" alt="" />
@@ -389,12 +389,12 @@
                         <div class="content text-left">
                             <h3 class="sub-title"><a href="#">Mailer.NET</a></h3>
                             <div class="meta">C#</div>
-                            <div class="action"><a href="#">Ver no Github</a></div>
+                            <div class="action no-print"><a href="#">Ver no Github</a></div>
                         </div><!--//content-->    
                         <a class="link-mask" target="_blank" href="https://github.com/Inside-Sistemas/mailer.net"></a>              
                     </div><!--//item-inner-->
                 </div><!--//item-->
-                <div class="item frontend col-md-3 col-xs-6 ">
+                <div class="item frontend col-md-3 col-xs-6 col-print-3">
                     <div class="item-inner">
                         <figure class="figure">
                             <img class="img-responsive" src="images/portfolio/jquery.jpg" alt="" />
@@ -402,12 +402,12 @@
                         <div class="content text-left">
                             <h3 class="sub-title"><a href="#">BuscaCep</a></h3>
                             <div class="meta">Jquery</div>
-                            <div class="action"><a href="#">Ver no Github</a></div>
+                            <div class="action no-print"><a href="#">Ver no Github</a></div>
                         </div><!--//content-->    
                         <a class="link-mask" target="_blank" href="https://github.com/lira92/buscacep"></a>              
                     </div><!--//item-inner-->
                 </div><!--//item-->
-                <div class="item backend col-md-3 col-xs-6 ">
+                <div class="item backend col-md-3 col-xs-6 col-print-3">
                     <div class="item-inner">
                         <figure class="figure">
                             <img class="img-responsive" src="images/portfolio/cakephp.png" alt="" />
@@ -415,12 +415,12 @@
                         <div class="content text-left">
                             <h3 class="sub-title"><a href="#">OndeEstudar.com</a></h3>
                             <div class="meta">CakePHP</div>
-                            <div class="action"><a href="#">Ver</a></div>
+                            <div class="action no-print"><a href="#">Ver</a></div>
                         </div><!--//content-->    
                         <a class="link-mask" target="_blank" href="http://ondeestudar.com/"></a>              
                     </div><!--//item-inner-->
                 </div><!--//item-->
-                <div class="item backend col-md-3 col-xs-6 ">
+                <div class="item backend col-md-3 col-xs-6 col-print-3">
                     <div class="item-inner">
                         <figure class="figure">
                             <img class="img-responsive" src="images/portfolio/asp-net-core.png" alt="" />
@@ -428,7 +428,7 @@
                         <div class="content text-left">
                             <h3 class="sub-title"><a href="#">Modern Web Apps - Api</a></h3>
                             <div class="meta">Asp Net Core</div>
-                            <div class="action"><a href="#">Ver no Github</a></div>
+                            <div class="action no-print"><a href="#">Ver no Github</a></div>
                         </div><!--//content-->    
                         <a class="link-mask" target="_blank" href="https://github.com/lira92/ModernStore.Api"></a>              
                     </div><!--//item-inner-->
@@ -437,7 +437,7 @@
             
         </section><!--//section-->
         
-        <section id="contact-section" class="contact-section section">
+        <section id="contact-section" class="contact-section section no-print">
             <h2 class="section-title">Contato</h2>
             <div class="intro">
                 <img class="profile-image" src="images/profile.png" alt="">
@@ -451,7 +451,7 @@
             </div><!--//intro-->
 
         </section><!--//section-->
-        
+        <p style="margin-left:30px;" class="print">Para visualizar este currículo on-line visite lira92.github.io</p>
     </div><!--//wrapper-->
     
     <!-- Javascript -->          

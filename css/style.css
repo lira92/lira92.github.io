@@ -915,3 +915,124 @@ a.btn:hover {
 .config-panel .close .fa {
   color: #fff;
 }
+
+.no-print {
+    display:block;
+}
+
+.print {
+    display:none
+}
+
+@media print {
+  * {
+    background:transparent !important;
+    color:#000 !important;
+    text-shadow:none !important;
+    filter:none !important;
+    -ms-filter:none !important;
+  }
+
+  body {
+    margin:0;
+    padding:0;
+    line-height: 1.4em;
+  }
+
+  .no-print {
+      display:none;
+  }
+
+  .print {
+      display:block
+  }
+
+  .intro {
+      margin-top: 100px;
+      padding-bottom: 0px !important;
+  }
+
+  a.print-only-content:link:after, a.print-only-content:visited:after {
+      content: "";
+  }
+
+  /*.list-inline li {
+      border: 1px solid #000;
+  }*/
+
+  .timeline {
+      border: 0;
+  }
+
+  .timeline .item:before {
+      border: 0;
+  }
+
+  .wrapper {
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+
+  /*.wrapper.container, header, section, .intro, .container {
+      border: 1px solid #000;
+  }*/
+
+  .col-print-1 {width:8%;  float:left;}
+  .col-print-2 {width:16%; float:left;}
+  .col-print-3 {width:25%; float:left;}
+  .col-print-4 {width:33%; float:left;}
+  .col-print-5 {width:42%; float:left;}
+  .col-print-6 {width:50%; float:left;}
+  .col-print-7 {width:58%; float:left;}
+  .col-print-8 {width:66%; float:left;}
+  .col-print-9 {width:75%; float:left;}
+  .col-print-10{width:83%; float:left;}
+  .col-print-11{width:92%; float:left;}
+  .col-print-12{width:100%; float:left;}
+
+  #education-section {
+    padding-left:50px;
+  }
+
+  img {
+    width: 100%;
+  }
+
+  .link-mask {
+    display:none;
+  }
+
+  .portfolio-section .item-inner .content .meta {
+    overflow: inherit;
+    text-overflow: inherit;
+    white-space: nowrap;
+    max-width: 100%;
+  }
+
+  .content.text-left {
+    height: 100px;
+  }
+
+  .portfolio-section .item-inner .link-mask {
+    display: block;
+    position: relative;
+    width: auto;
+    height: auto;
+  }
+
+  .link-mask {
+    font-size: 10px;
+  }
+
+  #topcontrol {
+    display:none;
+  }
+
+  .page-break { 
+    page-break-before: always; 
+  }
+
+  section {
+    margin-bottom: 0px !important;
+  }
+}
