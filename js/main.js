@@ -74,6 +74,8 @@ $(document).ready(function() {
           $( this ).addClass('active');
         });
     });
-    
 
+    $('#print-btn').click(function() {
+        window.print();
+    });
 });
