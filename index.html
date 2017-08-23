@@ -1,15 +1,23 @@
 <html>
     <head>
-        <script language="JavaScript" src="http://www.geoplugin.net/javascript.gp" type="text/javascript"></script>
+        
     </head>
     <body>
         <script language="Javascript">
-            if(geoplugin_countryName() == 'Brazil') {
-                window.location.replace("http://lira92.github.io/pt-br");
-            }
-            else {
-                window.location.replace("http://lira92.github.io/en-us");
-            }
+            var xmlhttp = new XMLHttpRequest();
+            xmlhttp.open('GET', 'https://ipinfo.io/json', true);
+            xmlhttp.onreadystatechange = function() {
+                if (xmlhttp.readyState == 4) {
+                    if(xmlhttp.status == 200) {
+                        var obj = JSON.parse(xmlhttp.responseText);
+                        if (obj.country != 'BR')
+                            window.location.replace('https://lira92.github.io/pt-br');
+                        else
+                            window.location.replace('https://lira92.github.io/en-us');
+                    }
+                }
+            };
+            xmlhttp.send(null);
         </script>
     </body>
 </html>
