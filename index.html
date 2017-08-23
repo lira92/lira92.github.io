@@ -10,7 +10,7 @@
                 if (xmlhttp.readyState == 4) {
                     if(xmlhttp.status == 200) {
                         var obj = JSON.parse(xmlhttp.responseText);
-                        if (obj.country != 'BR')
+                        if (obj.country == 'BR')
                             window.location.replace('https://lira92.github.io/pt-br');
                         else
                             window.location.replace('https://lira92.github.io/en-us');
