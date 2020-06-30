@@ -916,9 +916,9 @@ a.btn:hover {
   color: #fff;
 }
 
-.no-print {
+/* .no-print {
     display:block;
-}
+} */
 
 .print {
     display:none
@@ -940,20 +940,20 @@ a.btn:hover {
   }
 
   .no-print {
-      display:none;
+    display:none;
   }
 
   .print {
-      display:block
+    display:block
   }
 
   .intro {
-      margin-top: 100px;
-      padding-bottom: 0px !important;
+    margin-top: 100px;
+    padding-bottom: 0px !important;
   }
 
   a.print-only-content:link:after, a.print-only-content:visited:after {
-      content: "";
+    content: "";
   }
 
   /*.list-inline li {
@@ -961,11 +961,11 @@ a.btn:hover {
   }*/
 
   .timeline {
-      border: 0;
+    border: 0;
   }
 
   .timeline .item:before {
-      border: 0;
+    border: 0;
   }
 
   .wrapper {
@@ -1034,5 +1034,49 @@ a.btn:hover {
 
   section {
     margin-bottom: 0px !important;
+  }
+
+  .section {
+    padding: 10px !important;
+    /* border: 1px solid #000;margin-right: 0; */
+  }
+
+  /* .item {
+    border: 1px solid #000;
+  } */
+
+  .timeline .item, .education-section .item, .skills-section .top-skills .item, .portfolio-section .item{
+    margin-bottom: 10px;
+  }
+
+  .row {
+    margin-right: 0;
+    margin-left: 0;
+    padding: 0 7px;
+  }
+
+  .skills-section .top-skills, .top-skills .subtitle, .section-title {
+    margin-bottom: 20px;
+  }
+
+  .misc-skills {
+    display: table;
+    margin: auto;
+  }
+
+  .misc-skills .skills-row {
+    display: table-row;
+  }
+
+  .misc-skills .skills-row .skill-tag {
+    display: table-cell;
+    box-shadow: none;
+    border: none;
+    padding: 8px;
+  }
+
+  .footer-print {
+    position: fixed;
+    bottom: 0;
   }
 }
